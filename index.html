@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Beleza Natural do Paraná</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: lightyellow;
+            text-align: center;
+        }
+
+        header {
+        background-image: linear-gradient(to bottom, #0a3302, #369423, #4fe332);            
+        color: white;
+            padding: 15px;
+        }
+
+        nav {
+            background-image: linear-gradient(to top, #0a3302, #369423, #4fe332);
+            padding: 15px;
+        }
+
+        a {
+          color: white
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            min-height: 200px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Beleza Natural do Paraná</h1>
+    </header>
+
+    <nav>
+        <a href="#"><b>Início</b></a>
+        <a href="#"><b>Sobre</b></a>
+        <a href="#"><b>Contato</b></a>
+    </nav>
+
+    <main id="conteudo">
+    </main>
+
+    <script>
+
+        const minhaImagem = document.createElement('img');
+        minhaImagem.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPglc6BH749YVhUEwRQEZQ4QwIsXnIp_nWgk8RZlpLBw&s=10';
+        minhaImagem.alt = 'Imagem de exemplo das cataratas do iguaçu';
+        minhaImagem.width = 500;
+        minhaImagem.height = 500;
+        document.body.appendChild(minhaImagem);
+        const main = document.getElementById("conteudo");
+        const titulo = document.createElement("h1");
+        titulo.textContent = "Cataratas do Iguaçu";
+        main.appendChild(titulo);
+        const paragrafo = document.createElement("p");
+        paragrafo.textContent = "As Cataratas do Iguaçu ficam em Foz do Iguaçu, no Paraná. É um lugar muito bonito e conhecido pelas suas grandes quedas de água.";
+        main.appendChild(paragrafo);
+        const paragrafo2 = document.createElement("p");
+        paragrafo2.textContent = "O local possui muitas árvores, animais e uma natureza muito bonita. É um ótimo lugar para visitar e conhecer.";
+        main.appendChild(paragrafo2);
+        const subtitulo = document.createElement("h2");
+        subtitulo.textContent = "O que tem nas Cataratas?";
+        main.appendChild(subtitulo);
+        const lista = document.createElement("ul");
+        const item1 = document.createElement("li");
+        item1.textContent = "Grandes cachoeiras";
+        lista.appendChild(item1);
+        const item2 = document.createElement("li");
+        item2.textContent = "Muitas árvores";
+        lista.appendChild(item2);
+        const item3 = document.createElement("li");
+        item3.textContent = "Animais da natureza";
+        lista.appendChild(item3);
+        main.appendChild(lista);
+
+    </script>
+
+</body>
+</html>
